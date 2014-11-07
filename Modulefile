@@ -1,0 +1,8 @@
+name    'haritzmedina-kibana'
+version '0.0.1'
+source 'https://github.com/haritzmedina/puppet-kibana'
+author 'haritzmedina'
+license 'Apache License, Version 2.0'
+summary 'Installs kibana'
+description 'Installs kibana and added to apache /kibana site'
+project_page 'https://github.com/haritzmedina/puppet-kibana'
