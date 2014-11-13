@@ -31,7 +31,7 @@ class kibana (
   }
   # Add alias to kibana on apache and restart on config change
   exec { "kibana_apache_signup":
-    command => "echo 'alias /kibana /usr/share/kibana' > /etc/apache2/sites-enabled/kibana.conf",
+    command => "echo 'alias /kibana /usr/share/kibana/$basename' > /etc/apache2/sites-enabled/kibana.conf",
     notify => Service["apache2"]
   }
 }
